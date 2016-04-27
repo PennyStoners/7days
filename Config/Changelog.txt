@@ -1,0 +1,128 @@
+v2.3.
+
+Mods Folder -
+Added weedCleaver icon
+Added clubBurning icon
+Added legendaryClubSpiked icon
+Added legendaryMachete icon
+Added legendaryFireaxe icon
+Added legendarySledgehammer icon
+Added legendaryHuntingKnife icon
+Adde expGain icon
+Added woodCNRRound icon
+Added flagstoneCNRRound icon
+Added cobblestoneCNRRound icon
+Added concreteCNRRound icon
+
+
+
+Localization.xml
+Added Legendary items and descriptions.
+Added trapSteelSpikeDesc
+Added trapSteelFireSpikeDesc
+Added appleCiderDesc
+Added crossbowRepeater
+Added crossbowRepeaterDesc
+Added MasterArcher
+Added archerDesc
+Fixed IronCrossbow name and description.
+Fixed cntSurvivorsBreifcaseDesc typo
+Added exp item names and desc.
+Added woodCNRRound
+Added flagstoneCNRRound
+Added cobblestoneCNRRound
+Added concreteCNRRound
+
+
+Items.xml
+weedCleaver - removed customicon property and reduced entitydamage.
+Mead - added description key.
+meadBlueberry - Added description key.
+appleCider - Added description key.
+weedCleaver - Lowered dismemberment base chance.
+crossbowSchematic - removed ironCrossbow from recipes to learn.
+recipebookArchery - removed ironBow from recipes to learn.
+ironCrossbow - Changed description key.
+clubBurning - removed customicon property.
+ID 2800 - Added legendaryClubSpiked
+ID 2801	- Added legendaryMachete
+ID 2802	- Added legendaryFireaxe
+ID 2803 - Added legendarySledgehammer
+ID 2804 - Added legendaryHuntingKnife
+ID 1624 - Added crossbowRepeater
+ID 2623 - Added challengeLightThemUp
+ID 2624 - Added challengeDogEatDog
+(Overhaul) - flamingArrowSchematic - removed recipes to learn.
+(Overhaul) - explodingCrossbowBoltSchematic - removed recipes to learn.
+
+
+Recipes.xml
+Added cntPurse01 recipe.
+Added burningBarrel recipe.
+Added woodStairsBoard recipe.
+Added woodCrossCtr recipe.
+Added woodCross recipe.
+Added seedApple recipe.
+Added flagstoneCNRRound recipe.
+Added crossbowRepeater recipe.
+Added woodCnrRound recipe
+Added cobblestoneCNRRound recipe
+Added concreteCNRRound recipe.
+Replaced all "snow" to "snowHarvested"
+Added exp recipes to the study desk.
+(Overhaul) - Increased crafting time of clubWood, stoneAxe, stoneShovel, woodenBow
+(Overhaul) - removed explodingCrossbowBoltSchematic recipe
+(Overhaul) - removed flamingArrowSchematic recipe
+
+
+Blocks.xml
+cntBackpack01 - added group property for Basics and Building.
+keystoneBlock - added upgrade class to woodFrameBlock using the Admin Tool so admins can destroy them.
+sandbagsBlock - Changed the group to building so they are more easily located.
+sandbagsBlockReinforced - Changed the group to building so they are more easily located.
+Brewery - Added false stabilitysupport property and lowered heath.
+workstationArmory - Added false stabilitysupport property and lowered heath.
+dyeStation - Added false stabilitysupport property and lowered heath.
+studyDesk - Added false stabilitysupport property and lowered heath.
+plantedPotato1 - Now gives seed if destroyed
+plantedBlueberry1 - Now gives seed if destroyed
+plantedCoffee1 - Now gives beans if destroyed
+plantedGoldenrod1 - Now gives seed if destroyed
+seedYucca - Now gives seed if destroyed - removed harvest event
+seedAloe - Now gives seed if destroyed - removed harvest event
+seedChrysanthemum - Now gives seed if destroyed - removed harvest event
+seedLeek - Now gives seed if destroyed. - removed harvest event
+seedWheat - Now gives seed if destroyed. - removed harvest event
+seedGrape - Now gives seed if destroyed. - removed harvest event
+seedHops - Now gives seed if destroyed. - removed harvest event
+seedApple - Now gives seed if destroyed. - removed harvest event
+appleGrown - Lowered Apple drop count from destroy and harvest event.
+trapSteelSpike - Added description key.
+trapSteelFireSpike - Added description key.
+ID 1780 - Added new wood round corner block.
+ID 1781 - Added new flagstone round corner block.
+ID 1782 - Added new cobblestone round corner block.
+ID 1783 - Added new concrete round corner block.
+(Expansion) - Removed pluck from plants so that destroying them with anything will give you the plant.
+(Expansion) plantedCotton3HarvestLarge - Downgrades to plantedCotton1
+
+Loot.xml
+Added ak47+ammo group.
+Added legendarymelee group.
+melee - added legendary melee group.
+militaryWeaponParts - added ak47 schematic.
+militaryguns+ammo - added ak47+ammo group.
+questChallenge - added challengeLightThemUp
+questChallenge - added challengeDogEatDog
+Small boost to survivor note drop chance.
+(Expansion) - questChallenge - added challengeSticky
+
+
+Progression.xml
+Added Master Archer perk.
+
+
+Quests.xml
+Added challenge_lightthemup
+Added challenge_dogeatdog
+Fixed challenge_sticky not showing the correct information in-game.
