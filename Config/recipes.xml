@@ -81,11 +81,7 @@ tooltip?
 
 <!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
 
-<recipe name="10mmBullet" count="1" scrapable="True">
-	<ingredient name="bulletCasing" count="1"/>
-	<ingredient name="gunPowder" count="2"/>
-	<ingredient name="bulletTip" count="1"/>
-</recipe>
+
 
 <recipe name="44MagBullet" count="1" scrapable="False">
 	<ingredient name="bulletCasing" count="1"/>
@@ -2649,21 +2645,13 @@ tooltip?
 		<ingredient name="unit_lead" count="1"/> 
 		<ingredient name="unit_clay" count="1"/>
     </recipe>
-    <recipe name="10mmBulletHP" count="1" scrapable="True">
-		<ingredient name="HollowTip" count="1" />
-        <ingredient name="gunPowder" count="2"/>
-        <ingredient name="bulletCasing" count="1"/>
-    </recipe>
+
     <recipe name="10mmBulletINC" count="1" scrapable="True">
 		<ingredient name="HollowTip" count="1" />
         <ingredient name="gunPowder" count="2"/>
         <ingredient name="bulletCasing" count="1"/>
     </recipe>
-    <recipe name="44MagBulletHP" count="1" scrapable="True">
-		<ingredient name="HollowTip" count="1" />
-        <ingredient name="gunPowder" count="3"/>
-        <ingredient name="bulletCasing" count="1"/>
-    </recipe>
+
     <recipe name="44MagBulletINC" count="1" scrapable="True">
 		<ingredient name="HollowTip" count="1" />
         <ingredient name="gunPowder" count="3"/>

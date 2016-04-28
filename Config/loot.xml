@@ -313,7 +313,6 @@
 <lootgroup name="ammo" count="1,3">
 	<item name="shotgunShell" count="5,20"/>
 	<item name="9mmBullet" count="5,30"/>
-	<item name="10mmBullet" count="5,30"/>
 	<item name="762mmBullet" count="5,30"/>
 	<item name="44MagBullet" count="5,22" prob="0.1"/>
 	<item name="steelArrow" count="5,12"/>
@@ -580,7 +579,6 @@
 	<!--
 	<item name="theRiddleOfSteel"/>
 	<item name="setInConcrete"/>	<item name="handleBarsSchematic"/>
-	<item name="10mmBulletSchematic"/>
 	<item name="762mmBulletSchematic"/>
 	-->
 	<item name="recipebookTraps"/>
@@ -639,12 +637,10 @@
 </lootgroup>
 
 <lootgroup name="militaryammo">
-	<item name="10mmBullet" count="15,40"/>
 	<item name="762mmBullet" count="15,35"/>
 	<item name="shotgunSlug" count="7,12"/>
 	<item name="rocket" count="1,4"/>
 	<item name="762mmBulletHP" count="10,15"/>
-	<item name="10mmBulletHP" count="10,15"/>
 	<item name="9mmBulletHP" count="10,15"/>
 	<item name="SiegeShell" count="10,15"/>
 </lootgroup>
@@ -1383,14 +1379,12 @@
 	<lootgroup name="SupplyAmmo" count="1,3">
 		<item name="shotgunShell" count="15,20"/>
 		<item name="9mmBullet" count="15,30"/>
-        <item name="10mmBullet" count="15,30"/>
         <item name="762mmBullet" count="15,30"/>
         <item name="44MagBullet" count="15,22"/>
         <item name="9mmBulletHP" count="10,12"/>
 		<item name="shotgunSlug" count="3,7"/>
 		<item name="rocket" count="3,4"/>
 		<item name="762mmBulletHP" count="10,15"/>
-		<item name="10mmBulletHP" count="10,15"/>
 		<item name="9mmBulletHP" count="10,15"/>
 		<item name="SiegeShell" count="10,15"/>
 	</lootgroup>
