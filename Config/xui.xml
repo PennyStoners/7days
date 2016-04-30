@@ -211,12 +211,5 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_pennyPost" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
 	</ruleset>
 </xui>

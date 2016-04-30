@@ -1,128 +1,325 @@
-v2.3.
+v2.4
 
-Mods Folder -
-Added weedCleaver icon
-Added clubBurning icon
-Added legendaryClubSpiked icon
-Added legendaryMachete icon
-Added legendaryFireaxe icon
-Added legendarySledgehammer icon
-Added legendaryHuntingKnife icon
-Adde expGain icon
-Added woodCNRRound icon
-Added flagstoneCNRRound icon
-Added cobblestoneCNRRound icon
-Added concreteCNRRound icon
+Mods folder -
+
+Added seedPack icon
+
+Added skinningKnife icon
+
+Added skillbookAthletics icon
+
+Added recipebookLoki icon
+
+Added moleSandwich icon
+
+Added lokiShell icon
+
+Added crudeNail icon
+
+
+
+Items.xml
+
+fuelLog - Increased fuel value (increased burn time)
+
+Tranquilizer - Small increase to entity damage.
+
+ChemicalDart - Increased entity damage.
+
+clubBurning - Increased DamageEntity value.
+
+1969 - Added butcherKnife
+
+1970 - Added skinningKnife
+
+arrow - added action exp
+
+ironArrow - added action exp
+
+steelArrow - added action exp
+
+Tranquilizer - added Science actionskillgroup
+
+(Overhaul) bulletCasing - added weight to allow scrapping
+
+(Overhaul) recipebookJunk - changed the skill gain to scravenging
+
+1647/1652 - Added lokiShell
+
+1971 - Added seedPack
+
+1972 - Added lokiStew
+
+1973 - Added lokiWater
+
+1974 - Added coldlokiWater
+
+1975 - Added moleSandwich
+
+1976 - Added lokiBow
+
+2025 - Added recipebookLoki
+
+2026 - Added skillbookAthletics
+
+2625 - Added challengeFeedTheMole
+
+2917 - Added expAthletics
+
+2918 - Added expScavenging
+
+2919 - Added expMiscCrafting
+
+(Overhaul) 1977 - Added carpenterKit
+
+(Overhaul) 1978 - Added crudeNail
+
+3000 - Added perkSurvivor
+
+3001 - Added perkMiner
+
+3002 - Added perkHunter
+
+3003 - Added perkGunman
+
+3004 - Added perkMedic
+
+3005 - Added perkBruiser
+
+3006 - Added perkRifleman
+
+3007 - Added perkVeteran
+
+3008 - Added perkBuilder
+
+(Overhaul) schematicForge - Added skills to gain.
+
+grillSteak - increased food gain.
+
+warmbowlMiso - added wellness gain.
+
+gunSawedOffPumpShotgun - added lokiShell
+
+gunPumpShotgun - Added lokiShell
+
+recipebookChemistry - added lokiShell to recipes to learn
+
+(Overhaul) recipebookCarpentry - added carpenterKit to recipes to learn
+
+(Overhaul) recipebookCarpentry - removed logCabinBlock and logCabinRamp from recipes to learn
+
+
+
+
+Blocks.xml
+
+appleTreeEmpty - set to drop seedApple instead of Apple_Seed
+
+workstationOven - added <property name="CraftingAreaRecipes" value="campfire" />
+
+2039 - Added plantSeed which is a generic seed that will place as a random plant.
+
+Removed all "<drop event="Destroy" count="1" />" since the code doesn't work like it used to.
+
+chickenCoop - reduced animalFeed upgrade requirement
+
+animalSnare - reduced animalFeed upgrade requirement
+
+window03Wood - added weight of 0
+
+(Overhaul) woodMaster - changed upgrade item to carpenterKit
+
+(Overhaul) woodMaster - added destroy even for nails
+
+(Overhaul) woodFrameMaster - changed upgrade item to carpenterkit
+
+(Overhaul) cntMedicineCabinet - added destroy event for nails
+
+(Overhaul) cabinetOldFillerBlock - added destroy event for nails
+
+(Overhaul) cabinetFillerBlock - added destroy evnet for nails
+
+(Overhaul) logCabinBlock - added destroy event to hopefully prevent nails from dropping
+
+(Overhaul) cntCabinet - added destroy event for nails
+
+(Overhaul) cntCabinetOldSink - added destroy event for nails
+
+(Overhaul) cntCabinetOldBottom - added destroy event for nails
+
+(Overhaul) cntCabinetOldTop - added destroy event for nails
+
+(Overhaul) cntCabinetTop - added destroy event for nails
+
+(Overhaul) cntNightstand - added destroy event for nails
+
+(Overhaul) cntDesk01 - added destroy event for nails
+
+(Overhaul) endTable - added destroy event for nails
+
+(Overhaul) endTableLamp - added destroy event for nails
+
+
+
+
+Loot.xml
+
+questChallenge group - added challengeFeedTheMole
+
+seeds group - removed all seeds and replaced with plantSeed and seedPack
+
+rottenFood group - added moleSandwich
+
+medicine group - increased syringe count
+
+militaryWeaponParts group - removed duplicated ak47Schematic and replaced it with sniperRifleSchematic
+
+melee group - added butcherKnife and skinningKnife
+
+commonBooks group - added skillbookAthletics
+
+rareBooks grouo - Added recipebookLoki
+
+(Overhaul) workingStiffs group - added carpenterKit
+
+(Overhaul) SupplyMaterials group - added caprenterKit
+
+(Overhaul) junk grouo - boosted nail drop rate
 
 
 
 Localization.xml
-Added Legendary items and descriptions.
-Added trapSteelSpikeDesc
-Added trapSteelFireSpikeDesc
-Added appleCiderDesc
-Added crossbowRepeater
-Added crossbowRepeaterDesc
-Added MasterArcher
-Added archerDesc
-Fixed IronCrossbow name and description.
-Fixed cntSurvivorsBreifcaseDesc typo
-Added exp item names and desc.
-Added woodCNRRound
-Added flagstoneCNRRound
-Added cobblestoneCNRRound
-Added concreteCNRRound
 
+Fixed Garden Tools desc typo.
 
-Items.xml
-weedCleaver - removed customicon property and reduced entitydamage.
-Mead - added description key.
-meadBlueberry - Added description key.
-appleCider - Added description key.
-weedCleaver - Lowered dismemberment base chance.
-crossbowSchematic - removed ironCrossbow from recipes to learn.
-recipebookArchery - removed ironBow from recipes to learn.
-ironCrossbow - Changed description key.
-clubBurning - removed customicon property.
-ID 2800 - Added legendaryClubSpiked
-ID 2801	- Added legendaryMachete
-ID 2802	- Added legendaryFireaxe
-ID 2803 - Added legendarySledgehammer
-ID 2804 - Added legendaryHuntingKnife
-ID 1624 - Added crossbowRepeater
-ID 2623 - Added challengeLightThemUp
-ID 2624 - Added challengeDogEatDog
-(Overhaul) - flamingArrowSchematic - removed recipes to learn.
-(Overhaul) - explodingCrossbowBoltSchematic - removed recipes to learn.
+Added cntZombieFemale name.
+
+turd2Desc - modified description
+
+Added dinnerPlateDesc
+
+Added plantSeed and desc
+
+Added seedPack and desc
+
+Fixed mealBreakfast typo
+
+Added recipebookLoki and desc
+
+Added skillbookAthletics and desc
+
+Added lokiStew and desc
+
+Added lokiWater and desc
+
+Added coldlokiWater
+
+Added moleSandwich and desc
+
+Added lokiBow and desc
+
+Added challengeFeedTheMole
+
+Added challengeDogEatDog
+
+Added challengeLightThemUp
+
+Added perkClassDesc and perk item names
+
+Added lokiShell and desc
+
+Added carpenterKit and Desc
+
+Added crudeNail
+
 
 
 Recipes.xml
-Added cntPurse01 recipe.
-Added burningBarrel recipe.
-Added woodStairsBoard recipe.
-Added woodCrossCtr recipe.
-Added woodCross recipe.
-Added seedApple recipe.
-Added flagstoneCNRRound recipe.
-Added crossbowRepeater recipe.
-Added woodCnrRound recipe
-Added cobblestoneCNRRound recipe
-Added concreteCNRRound recipe.
-Replaced all "snow" to "snowHarvested"
-Added exp recipes to the study desk.
-(Overhaul) - Increased crafting time of clubWood, stoneAxe, stoneShovel, woodenBow
-(Overhaul) - removed explodingCrossbowBoltSchematic recipe
-(Overhaul) - removed flamingArrowSchematic recipe
+
+(Expansion) Removed autowall's craft_area="workbench"
+
+fuelLog - set craft_time to 10 seconds.
+
+Added Syringe recipe.
+
+Added recipe for houseFrontDoor1_v1
+
+Added recipe for houseFrontDoor2_v1
+
+Removed "Working Oven Recipes" section
+
+Added seedPack recipes to let you craft the seedPack into whatever seed you want.
+
+Added lokiBow recipe
+
+Added lokiWater recipe
+
+Added expAthletics
+
+Added lokiStew recipe
+
+Added expScavenging recipe
+
+Added expMiscCrafting recipe
+
+Added a moldyBread recipe for moleSandwich
+
+Added lokiShell recipe
 
 
-Blocks.xml
-cntBackpack01 - added group property for Basics and Building.
-keystoneBlock - added upgrade class to woodFrameBlock using the Admin Tool so admins can destroy them.
-sandbagsBlock - Changed the group to building so they are more easily located.
-sandbagsBlockReinforced - Changed the group to building so they are more easily located.
-Brewery - Added false stabilitysupport property and lowered heath.
-workstationArmory - Added false stabilitysupport property and lowered heath.
-dyeStation - Added false stabilitysupport property and lowered heath.
-studyDesk - Added false stabilitysupport property and lowered heath.
-plantedPotato1 - Now gives seed if destroyed
-plantedBlueberry1 - Now gives seed if destroyed
-plantedCoffee1 - Now gives beans if destroyed
-plantedGoldenrod1 - Now gives seed if destroyed
-seedYucca - Now gives seed if destroyed - removed harvest event
-seedAloe - Now gives seed if destroyed - removed harvest event
-seedChrysanthemum - Now gives seed if destroyed - removed harvest event
-seedLeek - Now gives seed if destroyed. - removed harvest event
-seedWheat - Now gives seed if destroyed. - removed harvest event
-seedGrape - Now gives seed if destroyed. - removed harvest event
-seedHops - Now gives seed if destroyed. - removed harvest event
-seedApple - Now gives seed if destroyed. - removed harvest event
-appleGrown - Lowered Apple drop count from destroy and harvest event.
-trapSteelSpike - Added description key.
-trapSteelFireSpike - Added description key.
-ID 1780 - Added new wood round corner block.
-ID 1781 - Added new flagstone round corner block.
-ID 1782 - Added new cobblestone round corner block.
-ID 1783 - Added new concrete round corner block.
-(Expansion) - Removed pluck from plants so that destroying them with anything will give you the plant.
-(Expansion) plantedCotton3HarvestLarge - Downgrades to plantedCotton1
-
-Loot.xml
-Added ak47+ammo group.
-Added legendarymelee group.
-melee - added legendary melee group.
-militaryWeaponParts - added ak47 schematic.
-militaryguns+ammo - added ak47+ammo group.
-questChallenge - added challengeLightThemUp
-questChallenge - added challengeDogEatDog
-Small boost to survivor note drop chance.
-(Expansion) - questChallenge - added challengeSticky
 
 
-Progression.xml
-Added Master Archer perk.
+entityclasses.xml
+
+animalBear - buffed meat drop from harvest
+
+animalStag - added Skinner harvest
+
+animalBear - added Skinner harvest
+
+zombieBear - added Skinner harvest
+
+animalRabbit - added Skinner harvest
+
+animalPig - added Skinner harvest
 
 
-Quests.xml
-Added challenge_lightthemup
-Added challenge_dogeatdog
-Fixed challenge_sticky not showing the correct information in-game.
+biomes.xml
+
+Added oilDeposit chance to spawn in other biomes rather than just the desert.
+
+
+
+progression.xml
+
+(Overhaul) Metal Smithing - lowered perk requirements.
+Added EntityDamage effect to Science skill.
+
+
+
+quests.xml
+
+Adjusted challenge_dogeatdog.
+
+Added - challenge_feedthemole
+
+Removed quest tracking from the class-specifc quests
+
+challenge_animaltrap - lowered quest reward
+
+Adjusted Hunter quests to hopefully fix them.
+
+Adjusted survivor quest to allow using other crossbows to complete.
+
+
+
+Localization - Quest
+
+Added requirementGroupBow
+Added requirementGroupCrossbow
+
+
+
+windows.xml
+
+windowToolsCampfire - added bowlWater sprite. 

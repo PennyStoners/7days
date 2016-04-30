@@ -158,15 +158,18 @@
 	<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath" />
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
-	<property name="TimeStayAfterDeath" value="300" />
+	<property name="TimeStayAfterDeath" value="3" />
 	<property name="AttackTimeoutDay" value="1.5" />
 	<!-- in s -->
 	<property name="AttackTimeoutNight" value="1.1" />
-	<property name="LootListOnDeath" value="15" />
-	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+<!--	<property name="LootListOnDeath" value="15" />-->
+	<property name="CorpseBlock" value="cntZombie"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="ExperienceGain" value="100"/>
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
+
+
+
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="ExperienceGain" value="100"/>
@@ -188,10 +191,10 @@
 	<property name="LegCrawlerThreshold" value="0"/>
 	<property name="LegCrippleThreshold" value="0.5"/>
 	<property name="KnockdownProneDamageThreshold" value="0.5"/>
-	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneStunDuration" value="2,3"/>
 	<property name="KnockdownProneRefillRate" value="0.05,0.05"/>
 	<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-	<property name="KnockdownKneelStunDuration" value="5,7"/>
+	<property name="KnockdownKneelStunDuration" value="2,3"/>
 	<property name="KnockdownKneelRefillRate" value="0.05,0.05"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
@@ -200,6 +203,7 @@
 </entity_class>
 
 <entity_class name="zombieferal" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieFeral"/>
 	<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll" />
 	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam" />
 	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert" />
@@ -212,9 +216,11 @@
 	<property name="HandItem" value="handCopZombie" />
 	<property name="MaxHealth" value="2800" />
 	<property name="ExperienceGain" value="2000"/>
-	<property name="LootListOnDeath" value="61" />
+<!--	<property name="LootListOnDeath" value="61" />-->
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting. Note that "Harvest" events do NOT extend. -->
+
+
 </entity_class>
 
 <entity_class name="zombieBoe" extends="zombie01">
@@ -234,6 +240,8 @@
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="DeadBodyHitPoints" value="150" />
+
+
 </entity_class>
 
 <entity_class name="zombieJoe" extends="zombie01">
@@ -246,9 +254,12 @@
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
+
+
 </entity_class>
 
 <entity_class name="zombieMoe" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieMoe"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
 	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
@@ -268,11 +279,12 @@
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
+<!--	<property name="LootListOnDeath" value="38" />-->
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
 </entity_class>
 
 <entity_class name="zombieArlene" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieFemale"/>
 	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
@@ -290,11 +302,13 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="87" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
+
+
 </entity_class>
 
 <entity_class name="zombieScreamer" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieFemale"/>
 	<property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll" />
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam" />
 	<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert" />
@@ -312,11 +326,11 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="87" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
 </entity_class>
 
 <entity_class name="zombieDarlene" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieFemale"/>
 	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
@@ -334,11 +348,11 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="87" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
 </entity_class>
 
 <entity_class name="zombieMarlene" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieFemale"/>
 	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
@@ -356,7 +370,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="87" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
 </entity_class>
 
@@ -398,8 +411,9 @@
 </entity_class>
 
 <entity_class name="snowzombie" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieSnow"/>
 	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
-	<property name="LootListOnDeath" value="85" />
+<!--	<property name="LootListOnDeath" value="85" />-->
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
@@ -467,9 +481,12 @@
 	<property name="ExperienceGain" value="150"/>
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
 	<drop event="Harvest" name="charredMeat" tool_category="Butcher" count="1" prob=".08" />
+
+
 </entity_class>
 
 <entity_class name="zombieNurse" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieNurse"/>
 	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
@@ -486,11 +503,14 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="21" />
+<!--	<property name="LootListOnDeath" value="21" />-->
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
+
+
 </entity_class>
 
 <entity_class name="fatzombiecop" extends="zombie01">
+	<property name="CorpseBlock" value="cntZombieCop"/>
 	<property name="Mesh" value="Zombies/zombieStandardCopRagdoll" />
 	<property name="Class" value="EntityZombieCop" />
 	<property name="HandItem" value="handCopZombie" />
@@ -505,7 +525,7 @@
 	<property name="MaxHealth" value="700" />
 	<property name="Weight" value="70" />
 	<property name="PushFactor" value="20" />
-	<property name="LootListOnDeath" value="17" />
+<!--	<property name="LootListOnDeath" value="17" />-->
 	<property name="AITask-1" value="BreakDoor" />
 	<property name="AITask-2" value="BreakBlock" />
 	<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
@@ -536,6 +556,8 @@
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
 	<property name="DeadBodyHitPoints" value="200" /> <!-- For harvesting -->
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4" />
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1" prob="1" />
 </entity_class>
 
 <entity_class name="hornet">
@@ -596,7 +618,7 @@
 	<property name="ExperienceGain" value="120"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="TimeStayAfterDeath" value="300" />
+	<property name="TimeStayAfterDeath" value="60" />
 	<property name="DeadBodyHitPoints" value="80" /> <!-- For harvesting -->
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
 	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
@@ -834,7 +856,9 @@
 	<property name="SoundSense" value="Animals/Bear/bearsense" />
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup" />
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-	<property name="TimeStayAfterDeath" value="300" />
+	<!--property name="LootListOnDeath" value="65" /-->
+	<!-- Need to remove this when we want to harvest the entity ! -->
+	<property name="TimeStayAfterDeath" value="120" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
 	<property name="ExperienceGain" value="500"/>
@@ -901,6 +925,8 @@
 	<property name="SoundSense" value="Animals/Bear/bearsense" />
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup" />
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+	<!--property name="LootListOnDeath" value="65" /-->
+	<!-- Need to remove this when we want to harvest the entity ! -->
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
@@ -935,6 +961,8 @@
 	<property name="SoundHurt" value="Animals/rabbitpain" />
 	<property name="SoundDeath" value="Animals/rabbitdeath" />
 	<property name="PanicSpeed" value="1.5" />
+	<!--property name="LootListOnDeath" value="13" /-->
+	<!-- Need to remove this when we want to harvest the entity ! -->
 	<property name="CorpseBlockChance" value="0"/>
 	<property name="ExperienceGain" value="150"/>
 	<!-- For harvesting -->
@@ -956,6 +984,8 @@
 	<property name="SoundHurt" value="Animals/Chicken/chickenpain" />
 	<property name="SoundDeath" value="Animals/Chicken/chickendeath" />
 	<property name="PanicSpeed" value="1" />
+	<!--property name="LootListOnDeath" value="13" /-->
+	<!-- Need to remove this when we want to harvest the entity ! -->
 	<property name="CorpseBlockChance" value="0"/>
 	<property name="ExperienceGain" value="150"/>
 	<!-- For harvesting -->
@@ -974,6 +1004,8 @@
 	<property name="Parent" value="Animals" />
 	<property name="SoundHurt" value="Animals/pigpain" />
 	<property name="SoundDeath" value="Animals/pigdeath" />
+	<!--property name="LootListOnDeath" value="18" /-->
+	<!-- Need to remove this when we want to harvest the entity ! -->
 	<property name="PanicSpeed" value="1.2" />
 	<property name="PhysicsBody" value="pig" />
 	<property name="ExperienceGain" value="150"/>
@@ -1131,6 +1163,8 @@
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="150" />
+
+
 </entity_class>
 
 <entity_class name="zombieUMAmale" extends="zombieUMAfemale" >
@@ -1205,6 +1239,7 @@
 
 <!-- New Enemies -->
     <entity_class name="Feral Ravager" extends="zombie01">
+		<property name="CorpseBlock" value="cntZombieFeralRavager"/>
         <property name="Mesh"   value="Zombies/zombieStandardFeralRagdoll" />
         <property name="SoundRandom"     value="Enemies/Feral_Zombie/zombieferalroam" />
         <property name="SoundAlert"     value="Enemies/Feral_Zombie/zombieferalalert" />
@@ -1216,7 +1251,7 @@
 		<property name="HandItem"             value="handFeralRavager" />
         <property name="MaxHealth"    value="450" />
 		<property name="ExperienceGain" value="300"/>
-		<property name="LootListOnDeath"  value="81" />
+<!--		<property name="LootListOnDeath"  value="81" />-->
         <property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="PhysicsBody" value="zombieStandardFemale" />
         <property name="Class"  value="EntityZombieCrawl" />
@@ -1232,6 +1267,7 @@
 		<property name="HasDeathAnim" value="false" />
     </entity_class>
     <entity_class name="Bloated Walker" extends="zombie01">
+		<property name="CorpseBlock" value="cntZombieBloatedWalker"/>
         <property name="SoundRandom"     value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
         <property name="SoundAlert"     value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
 	    <property name="SoundSense"  value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
@@ -1247,7 +1283,7 @@
 	    <property name="Weight"       value="70" />
 	    <property name="PushFactor"   value="20" />
 	    <property name="CanClimbLadders"     value="true" />
-	    <property name="LootListOnDeath"  value="80" />
+	<!--    <property name="LootListOnDeath"  value="80" /> -->
 		<property name="ExperienceGain" value="300"/>		
 		<property name="PhysicsBody" value="zombieStandard" />
 		<property name="RootMotion"   value="true" />
@@ -1292,6 +1328,7 @@
 		<property name="HasDeathAnim" value="false" />		
     </entity_class>
     <entity_class name="Zombie Gorilla Boss" extends="zombie01">
+		<property name="CorpseBlock" value="cntZombieFeral"/>
         <property name="Mesh"                 value="Zombies/zombieStandardCopRagdoll" />
 	    <property name="HandItem"             value="GorillaBossHand" />
 	    <property name="WalkType"             value="8" />
@@ -1306,7 +1343,7 @@
 	    <property name="MaxHealth"    value="3300" />
 	    <property name="Weight"       value="300" />
 	    <property name="PushFactor"   value="20" />
-	    <property name="LootListOnDeath"  value="61" />
+<!--	    <property name="LootListOnDeath"  value="61" /> -->
         <property name="AITask-1" value="BreakDoor" />
         <property name="AITask-2" value="BreakBlock" />
 		<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->

@@ -2240,6 +2240,46 @@ tooltip?
 	<recipe name="seedApple" count="1" scrapable="False" >
         <ingredient name="Apple" count="1" />
     </recipe>
+		<!-- Seed Pack --> 
+	<recipe name="seedYucca" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+    <recipe name="seedAloe" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+    <recipe name="seedChrysanthemum" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+	<recipe name="seedLeek" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+	<recipe name="seedWheat" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+	<recipe name="seedGrape" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+	<recipe name="seedHops" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+	<recipe name="seedApple" count="1" scrapable="False" >
+        <ingredient name="seedPack" count="1" />
+    </recipe>
+<recipe name="blueberrySeed" count="1" scrapable="False">
+	<ingredient name="seedPack" count="1"/>
+</recipe>
+<recipe name="cornSeed" count="1" scrapable="False">
+	<ingredient name="seedPack" count="1"/>
+</recipe>
+<recipe name="cottonSeed" count="1" scrapable="False">
+	<ingredient name="seedPack" count="1"/>
+</recipe>
+<recipe name="goldenrodSeed" count="1" scrapable="False">
+	<ingredient name="seedPack" count="1"/>
+</recipe>
+<recipe name="potatoSeed" count="1" scrapable="False">
+	<ingredient name="seedPack" count="1"/>
+</recipe>
 	
 		<!-- Expanded Player Storage Mod -->	
 	<recipe name="cntEPSMunitionsBox" count="1" scrapable="False">
@@ -2295,13 +2335,38 @@ tooltip?
     </recipe>
 
 		<!-- Misc Recipes Mod -->
+<recipe name="lokiBow" count="1" scrapable="False">
+	<ingredient name="yuccaFibers" count="6"/>
+	<ingredient name="wood" count="12"/>
+</recipe>
+<recipe name="lokiWater" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+<recipe name="lokiStew" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="potato" count="1"/>
+	<ingredient name="corn" count="1"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+<recipe name="lokiStew" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="assortedVegetables" count="4"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+<recipe name="Syringe" count="1" scrapable="False" craft_area="forge" material_based="true">
+	<ingredient name="unit_glass" count="10"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
 <recipe name="Lockpick" count="1" scrapable="True">
 	<ingredient name="forgedIron" count="1"/>
 </recipe>
     <recipe name="moldyBread" count="2" scrapable="False">
         <ingredient name="shamSandwich" count="1" />
     </recipe>
-	<recipe name="fuelLog" count="1" scrapable="False">
+    <recipe name="moldyBread" count="2" scrapable="False" >
+        <ingredient name="moleSandwich" count="1" />
+    </recipe>
+	<recipe name="fuelLog" count="1" scrapable="False" craft_time="10">
 	<ingredient name="wood" count="40"/>
   <ingredient name="tallow" count="1" />
 </recipe>
@@ -2704,6 +2769,11 @@ tooltip?
          <ingredient name="Syringe" count="1"/>
         <ingredient name="chemicalAgent" count="1"/>
     </recipe>
+    <recipe name="lokiShell" count="1" scrapable="False">
+         <ingredient name="chemicalAgent" count="1"/>
+        <ingredient name="gunPowder" count="2"/>
+        <ingredient name="paper" count="1"/>
+    </recipe>
 		<!-- Expanded Weapons and Tools Mod -->
 	<recipe name="gunBoltRifle" count="1" scrapable="True" craft_area="assembly">
 	<ingredient name="flashlight02" count="0"/>
@@ -2741,13 +2811,7 @@ tooltip?
     <recipe name="weedCleaver" count="1" scrapable="False">
         <ingredient name="forgedIron" count="4"/>
         <ingredient name="wood" count="3"/>
-    </recipe>
-<recipe name="crossbowRepeater" count="1" scrapable="False">
-	<ingredient name="forgedIron" count="4"/>
-	<ingredient name="leather" count="2"/>
-	<ingredient name="wood" count="10"/>
-	<ingredient name="spring" count="5"/>
-</recipe>
+    </recipe>	
 		<!--Survivor Notes Mod -->
 	<recipe name="recipebookTraps" count="1" craft_area="studyDesk" scrapable="False">
     <ingredient name="survivorNotes" count="3" />
@@ -2881,10 +2945,6 @@ tooltip?
  	<recipe name="recipebookLockpick" count="1" craft_area="studyDesk" scrapable="False">
     <ingredient name="survivorNotes" count="10" />
   </recipe>
-  <recipe name="auctionTicket" count="1" craft_area="studyDesk" scrapable="False">
-    <ingredient name="survivorNotes" count="20" />
-  </recipe>
-  
 <!-- EXP Gain -->
 <recipe name="expWeaponSmithing" count="1" craft_area="studyDesk" scrapable="False">
     <ingredient name="survivorNotes" count="1" />
@@ -2937,7 +2997,15 @@ tooltip?
 <recipe name="expRifles" count="1" craft_area="studyDesk" scrapable="False">
     <ingredient name="survivorNotes" count="1" />
 </recipe>
-  
+<recipe name="expAthletics" count="1" craft_area="studyDesk" scrapable="False">
+    <ingredient name="survivorNotes" count="1" />
+</recipe>
+<recipe name="expScavenging" count="1" craft_area="studyDesk" scrapable="False">
+    <ingredient name="survivorNotes" count="1" />
+</recipe>
+<recipe name="expMiscCrafting" count="1" craft_area="studyDesk" scrapable="False">
+    <ingredient name="survivorNotes" count="1" />
+</recipe>
 		<!-- Classes Mod -->
 	<recipe name="Class - Hunter (Locked)" count="1" scrapable="False">
   <ingredient name="classSelection" count="1" />
@@ -2967,7 +3035,7 @@ tooltip?
   <ingredient name="classSelection" count="1" />
 	</recipe>
 
-		<!-- Working Oven Recipes -->
+		<!-- Working Oven Recipes 
     <recipe name="bowl" count="1" scrapable="False" craft_area="workstationOven">
         <ingredient name="clayLump" count="3"/>
     </recipe>
@@ -3055,10 +3123,6 @@ tooltip?
     <recipe name="bowlWater" count="1" scrapable="False" craft_area="workstationOven" craft_tool="cookingPot">
         <ingredient name="bowlMurkyWater" count="1"/>
     </recipe>
-<!--    <recipe name="bowlWater" count="1" scrapable="False">
-        <ingredient name="snowHarvested" count="1" />
-        <ingredient name="bowl" count="1" />
-    </recipe>	-->
     <recipe name="soupMushroom" count="1" scrapable="False" craft_area="workstationOven" craft_tool="cookingPot">
         <ingredient name="bowlWater" count="1"/>
     <ingredient name="mushrooms" count="3" />
@@ -3136,12 +3200,152 @@ tooltip?
 <recipe name="tallow" count="1" scrapable="False" craft_area="workstationOven" craft_tool="cookingPot">
 	<ingredient name="animalFat" count="1"/>
 </recipe>
-
+-->
 
 	<!-- Dye Station -->
     <recipe name="dyeStation" count="1" scrapable="False">
         <ingredient name="wood" count="10"/>
 		<ingredient name="nail" count="10"/>
+    </recipe>
+    <recipe name="leatherHoodRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
+    </recipe>
+    <recipe name="leatherHoodBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
+    </recipe>
+    <recipe name="leatherHoodGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
+    </recipe>
+    <recipe name="leatherHoodPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
+    </recipe>
+    <recipe name="leatherHoodYellow" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketYellow" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsYellow" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsYellow" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesYellow" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
+    </recipe>
+    <recipe name="leatherHoodOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
+    </recipe>
+    <recipe name="leatherHoodBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherHood" count="1"/>
+    </recipe>
+    <recipe name="leatherJacketBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherJacket" count="1"/>
+    </recipe>
+    <recipe name="leatherPantsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherPants" count="1"/>
+    </recipe>
+    <recipe name="leatherBootsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherBoots" count="1"/>
+    </recipe>
+    <recipe name="leatherGlovesBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherGloves" count="1"/>
     </recipe>
     <recipe name="ironHelmetRed" count="1" scrapable="False" craft_area="dyeStation">
         <ingredient name="sprayPaint" count="5"/>
@@ -3223,6 +3427,26 @@ tooltip?
         <ingredient name="sprayPaint" count="5"/>
 		<ingredient name="ironGloves" count="1"/>
     </recipe>
+    <recipe name="ironHelmetLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="ironHelmet" count="1"/>
+    </recipe>
+    <recipe name="ironChestArmorLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="ironChestArmor" count="1"/>
+    </recipe>
+    <recipe name="ironLegArmorLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="ironLegArmor" count="1"/>
+    </recipe>
+    <recipe name="ironBootsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="ironBoots" count="1"/>
+    </recipe>
+    <recipe name="ironGlovesLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="ironGloves" count="1"/>
+    </recipe>
     <recipe name="ironHelmetOrange" count="1" scrapable="False" craft_area="dyeStation">
         <ingredient name="sprayPaint" count="5"/>
 		<ingredient name="ironHelmet" count="1"/>
@@ -3263,6 +3487,426 @@ tooltip?
         <ingredient name="sprayPaint" count="5"/>
 		<ingredient name="ironGloves" count="1"/>
     </recipe>
+    <recipe name="scrapHelmetRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="scrapHelmetBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="scrapHelmetGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="scrapHelmetPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="scrapHelmetLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="scrapHelmetOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="scrapHelmetBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapHelmet" count="1"/>
+    </recipe>
+    <recipe name="scrapChestArmorBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapChestArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapLegArmorBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapLegArmor" count="1"/>
+    </recipe>
+    <recipe name="scrapBootsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapBoots" count="1"/>
+    </recipe>
+    <recipe name="scrapGlovesBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="scrapGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="clothHatBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothHat" count="1"/>
+    </recipe>
+    <recipe name="clothJacketBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothJacket" count="1"/>
+    </recipe>
+    <recipe name="clothPantsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothPants" count="1"/>
+    </recipe>
+    <recipe name="clothBootsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothBoots" count="1"/>
+    </recipe>
+    <recipe name="clothGlovesBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="clothGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
+    <recipe name="animalHideHoodBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideHood" count="1"/>
+    </recipe>
+    <recipe name="animalHideChestArmorBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideChestArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideLegArmorBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideLegArmor" count="1"/>
+    </recipe>
+    <recipe name="animalHideBootsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideBoots" count="1"/>
+    </recipe>
+    <recipe name="animalHideGlovesBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="3"/>
+		<ingredient name="animalHideGloves" count="1"/>
+    </recipe>
     <recipe name="leatherDusterRed" count="1" scrapable="False" craft_area="dyeStation">
         <ingredient name="assortedDyes" count="5"/>
 		<ingredient name="leatherDuster" count="1"/>
@@ -3279,6 +3923,10 @@ tooltip?
           <ingredient name="assortedDyes" count="5"/>
 		  <ingredient name="leatherDuster" count="1"/>
     </recipe>
+    <recipe name="leatherDusterLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="assortedDyes" count="5"/>
+		<ingredient name="leatherDuster" count="1"/>
+    </recipe>
     <recipe name="leatherDusterOrange" count="1" scrapable="False" craft_area="dyeStation">
         <ingredient name="assortedDyes" count="5"/>
 		<ingredient name="leatherDuster" count="1"/>
@@ -3286,6 +3934,146 @@ tooltip?
     <recipe name="leatherDusterBlack" count="1" scrapable="False" craft_area="dyeStation">
         <ingredient name="assortedDyes" count="5"/>
 		<ingredient name="leatherDuster" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplateRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesRed" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplateBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesBlue" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplateGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesGreen" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplatePurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesPurple" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplateLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesLime" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+        <ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplateOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesOrange" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
+    </recipe>
+    <recipe name="steelHelmetBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+        <ingredient name="steelHelmet" count="1"/>
+    </recipe>
+    <recipe name="steelChestplateBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelChestplate" count="1"/>
+    </recipe>
+    <recipe name="steelLegsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelLegs" count="1"/>
+    </recipe>
+    <recipe name="steelBootsBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelBoots" count="1"/>
+    </recipe>
+    <recipe name="steelGlovesBlack" count="1" scrapable="False" craft_area="dyeStation">
+        <ingredient name="sprayPaint" count="5"/>
+		<ingredient name="steelGloves" count="1"/>
     </recipe>
 
 		<!-- Workstations Mod -->
@@ -3297,6 +4085,12 @@ tooltip?
     </recipe>
 
 <!-- Expanded Vanilla Recipes -->
+<recipe name="houseFrontDoor1_v1" count="1" scrapable="False" craft_area="workbench">
+	<ingredient name="wood" count="10"/>
+</recipe>
+<recipe name="houseFrontDoor2_v1" count="1" scrapable="False" craft_area="workbench">
+	<ingredient name="wood" count="10"/>
+</recipe>
 <recipe name="woodCross" count="1" scrapable="False">
 	<ingredient name="wood" count="10"/>
 </recipe>
@@ -3447,137 +4241,16 @@ tooltip?
 	<ingredient name="forgedIron" count="25"/>
 </recipe>
 
-<!-- Penny Post -->
-<recipe name="pennyPost" count="1" scrapable="False">
-	<ingredient name="wood" count="10"/>
-	<ingredient name="casinoCoin" count="50"/>
-	<ingredient name="forgedSteel" count="10"/>
-</recipe>
-<recipe name="partsPistol_grip" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPistol_receiver" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPistol_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPistol_barrel" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="parts44Magnum_grip" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="parts44Magnum_cylinder" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="parts44Magnum_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="parts44Magnum_frame" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPumpShotgun_stockShort" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPumpShotgun_receiver" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPumpShotgun_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPumpShotgun_barrelShort" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPumpShotgun_stock" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsPumpShotgun_barrel" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsAK47_stock" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsAK47_receiver" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsAK47_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsAK47_barrel" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsHuntingRifle_stock" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsHuntingRifle_receiver" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsHuntingRifle_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsHuntingRifle_barrel" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsSniperRifle_stock" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsSniperRifle_receiver" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsSniperRifle_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsSniperRifle_barrel" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsRocketLauncher_stock" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsRocketLauncher_receiver" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsRocketLauncher_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsRocketLauncher_barrel" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsBoltRifle_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="gunSilencer" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="gunChoke" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="gunScope" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsChainsaw_blade" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsChainsaw_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsAuger_blade" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-<recipe name="partsAuger_parts" count="1" scrapable="False" craft_area="pennyPost">
-	<ingredient name="casinoCoin" count="5000"/>
-</recipe>
-
 
 <!-- AutoWalls -->
-<recipe name="AutoWall_Wood" count="1" scrapable="False" craft_area="workbench">
+<recipe name="AutoWall_Wood" count="1" scrapable="False" >
 	<ingredient name="woodFrameBlock" count="6"/>
 	<ingredient name="wood" count="60"/>
 </recipe>
-<recipe name="AutoWall_Concrete" count="1" scrapable="False" craft_area="workbench">
+<recipe name="AutoWall_Concrete" count="1" scrapable="False" >
 	<ingredient name="concreteBlock" count="6"/>
 </recipe>
-<recipe name="AutoWall_Reinforced_Concrete" count="1" scrapable="False" craft_area="workbench">
+<recipe name="AutoWall_Reinforced_Concrete" count="1" scrapable="False" >
 	<ingredient name="rebarFrameBlock" count="6"/>
 	<ingredient name="wood" count="60"/>
 	<ingredient name="concreteMix" count="60"/>

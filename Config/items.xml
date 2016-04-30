@@ -23,7 +23,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 <!-- * * * * * * * * * * player melee weapons / clubs / knives * * * * * * * * * * -->
 <item id="1" name="clubMaster">
 	<property name="IsDeveloper" value="true" />
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Branch" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
 	<property name="Material" value="wood" />
 	<property name="RepairTools" value="wood" />
 	<property name="HoldType" value="2" />
@@ -73,7 +73,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="7" name="clubIron">
 	<property name="Extends" value="clubMaster" />
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Refined" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="scrapIron" />
 	<property class="Action0">
@@ -93,7 +93,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="8" name="clubBarbed">
 	<property name="Extends" value="clubIron" />
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Barbed" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab" />
 	<property name="RepairTools" value="forgedIron" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Buff" value="bleeding,criticalBlunt" />
@@ -113,7 +113,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="9" name="clubSpiked">
 	<property name="Extends" value="clubIron" />
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Spiked" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab" />
 	<property name="RepairTools" value="forgedIron" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Buff" value="bleeding,criticalBlunt" />
@@ -130,7 +130,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="clubSpikedDesc"/>
 </item>
 <item id="12" name="sledgehammer">
-	<property name="Meshfile" value="Items/Tools/sledgehammer_steel" />
+	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="forgedIron" />
 	<property name="HoldType" value="33" />
@@ -252,7 +252,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="19" name="boneShiv">
-	<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 	<property name="Material" value="metal" />
 	<property name="HoldType" value="36" />
  	<property name="SoundDestroy" value="wooddestroy1" />
@@ -285,7 +285,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="21" name="huntingKnife">
-	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knife" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="forgedIron" />
 	<property name="HoldType" value="36" />
@@ -321,7 +321,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="22" name="machete">
-	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machete" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="forgedIron" />
 	<property name="HoldType" value="47" />
@@ -345,6 +345,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.leaves" value="25" />
 		<property name="DamageBonus.organic" value="3" />
 		<property name="ToolCategory.Butcher" value="1" />
+		<property name="Sound_harvesting" value="UseActions/open_animal" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30" />
@@ -480,9 +481,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell" />
-		<property name="Magazine_item_ray_counts" value="9, 9, 9" />
-		<property name="Magazine_item_ray_spreads" value="0.9, 0.9, 0.9" />
+		<property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell" />
+		<property name="Magazine_item_ray_counts" value="9, 9, 9, 9" />
+		<property name="Magazine_item_ray_spreads" value="0.9, 0.9, 0.9, 0.9" />
 		<property name="Reload_time" value="2.6" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire" />
@@ -536,9 +537,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug, shotgunShellINC" />
-		<property name="Magazine_item_ray_counts" value="8, 1, 8" />
-		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.75" />
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug, shotgunShellINC, lokiShell" />
+		<property name="Magazine_item_ray_counts" value="8, 1, 8, 8" />
+		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.75, 0.75" />
 		<property name="Reload_time" value="2.6" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="Weapons/Ranged/PumpShotgun/pump_shotgun_fire" />
@@ -1084,7 +1085,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 <!-- * * * * * * * * * * tools for mining / farming, manual or motorised * * * * * * * * * * -->
 
 <item id="105" name="stoneAxe">
-	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axe" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
 	<property name="Material" value="stone" />
 	<property name="RepairTools" value="rockSmall" />
 	<property name="HoldType" value="32" />
@@ -1114,7 +1115,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Repair_amount" value="100" />
 		<property name="Upgrade_hit_offset" value="0" />
 		<property name="Sound_start" value="UseActions/repair_block" />
-		<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers" />
+		<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers,doorKnob,ductTape,gasCan" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10" />
@@ -1167,6 +1168,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.organic" value="1" />
 		<property name="ToolCategory.Butcher" value="0.5" />
+		<property name="Sound_harvesting" value="UseActions/open_animal" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,15" />
@@ -1196,7 +1198,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="113" name="pickaxeIron">
-	<property name="Meshfile" value="Items/Tools/pickaxe_iron" />
+	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab" />
 	<property name="SoundJammed" value="ItemNeedsRepair" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="forgedIron" />
@@ -1233,7 +1235,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="114" name="pickaxeSteel">
 	<property name="Extends" value="pickaxeIron" />
-	<property name="Meshfile" value="Items/Tools/pickaxe_steel" />
+	<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab" />
 	<property name="HoldType" value="4" />
 	<property name="RepairTools" value="forgedSteel" />
 	<property class="Action0">
@@ -1251,7 +1253,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="117" name="stoneShovel">
-	<property name="Meshfile" value="Items/Tools/stone_shovel" />
+	<property name="Meshfile" value="Items/Tools/stone_shovelPrefab" />
 	<property name="Material" value="stone" />
 	<property name="RepairTools" value="rockSmall" />
 	<property name="HoldType" value="18" />
@@ -1275,6 +1277,14 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.metal" value=".5" />
 		<property name="DamageBonus.organic" value=".7" />
 	</property>
+		<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Repair_amount" value="10" />
+			<property name="Upgrade_hit_offset" value="-2" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="turd" />
+		</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12" />
 		<property name="BlockDamage" value="15,30" />
@@ -1288,7 +1298,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="118" name="shovelIron">
-	<property name="Meshfile" value="Items/Tools/shovel_iron" />
+	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="forgedIron" />
 	<property name="HoldType" value="18" />
@@ -1311,6 +1321,14 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.metal" value=".25" />
 		<property name="DamageBonus.organic" value=".7" />
 	</property>
+		<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Repair_amount" value="10" />
+			<property name="Upgrade_hit_offset" value="-2" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="turd" />
+		</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,19" />
 		<property name="BlockDamage" value="18,44" />
@@ -1326,6 +1344,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="119" name="shovelSteel">
 	<property name="Extends" value="shovelIron" />
+	<property name="Meshfile" value="Items/Tools/shovel_steelPrefab" />
 	<property name="CustomIcon" value="shovelIron" />
 	<property name="CustomIconTint" value="a0a0ff" />
 	<property name="RepairTools" value="forgedSteel" />
@@ -1341,7 +1360,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="122" name="hoeIron">
-	<property name="Meshfile" value="Items/Tools/hoe_iron" />
+	<property name="Meshfile" value="Items/Tools/hoe_ironPrefab" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="forgedIron" />
 	<property name="HoldType" value="4" />
@@ -1456,7 +1475,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Repair_amount" value="350" />
 		<property name="Upgrade_hit_offset" value="-3" />
 		<property name="Sound_start" value="UseActions/repair_block" />
-		<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers,nail" />
+		<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers,nail,doorKnob,ductTape,gasCan" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,20" />
@@ -1506,7 +1525,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Upgrade_hit_offset" value="-3" />
 		<property name="Repair_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
 		<property name="Upgrade_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
-		<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers,nail" />
+		<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers,nail,doorKnob,ductTape,gasCan" />
 		<!--<property name="Restricted_upgrade_items" value="concrete" />-->
 	</property>
 	<property name="Group" value="Tools/Traps" />
@@ -1546,6 +1565,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="SupportHarvesting" value="true" />
+		<property name="UseMeleeCrosshair" value="true" />
 		<property name="ActionExp" value="1" />
 		<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
 	</property>
@@ -1599,6 +1619,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.head" value="3" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="SupportHarvesting" value="true" />
+		<property name="UseMeleeCrosshair" value="true" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
 	<property name="ActionSkillGroup" value="Mining Tools"/>
@@ -1620,6 +1641,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Catapult" />
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
+		<property name="Hitmask_override" value="Arrow" />
 		<property name="Delay" value="1" />
 		<property name="Magazine_size" value="1" />
 		<property name="Magazine_items" value="arrow, ironArrow, steelArrow, flamingArrow" />
@@ -1663,6 +1685,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
  	<property name="SoundDestroy" value="wooddestroy1" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
+		<property name="Hitmask_override" value="Arrow" />
 		<property name="Delay" value="0.8" />
 		<property name="Magazine_size" value="1" />
 		<property name="Magazine_items" value="crossbowBolt, ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt" />
@@ -1804,15 +1827,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="FuelValue" value="2" />
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Resources,Chemicals" />
-<!--Valmod-->
-		<property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="125" />
-			<property name="Upgrade_hit_offset" value="-1" />
-			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="gasCan" />
-		</property>
 </item>
 
 <item id="164" name="arrow">
@@ -1837,6 +1851,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.1" />
 		<property name="DamageBonus.metal" value="0.1" />
 		<property name="DamageBonus.cloth" value="0.5" />
+		<property name="ActionExp" value="10" />
 	</property>
 	<property name="Group" value="Ammo/Weapons,Basics" />
 	<property class="Attributes">
@@ -1871,6 +1886,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.1" />
 		<property name="DamageBonus.metal" value="0.1" />
 		<property name="DamageBonus.cloth" value="0.5" />
+		<property name="ActionExp" value="15" />
 		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
@@ -1905,6 +1921,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.1" />
 		<property name="DamageBonus.metal" value="0.1" />
 		<property name="DamageBonus.cloth" value="0.5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
@@ -2218,14 +2235,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Max_strain_time" value="2.1" />
 		<property name="Sound_start" value="swoosh" />
 	</property>
-		<property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="10" />
-			<property name="Upgrade_hit_offset" value="-2" />
-			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="turd" />
-		</property>
 </item>
 
 <!-- * * * * * * * * * * parts for assembled weapons, tools, and vehicles * * * * * * * * * * -->
@@ -3468,7 +3477,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="452" name="plantFiberHat"> <!-- plantFiberClothes -->
-	<property name="Extends" value="plantFiberPants" />
+	<property name="Extends" value="plantFiberPants" param1="DescriptionKey" />
 	<property name="CustomIcon" value="cowboyHat" />
 	<property name="CustomIconTint" value="227,206,164" />
 	<property name="Insulation" value="-8"/>
@@ -3994,7 +4003,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="clothes_denim_pants" />
-		<property name="Overlay0Tint" value="688DD7" />
+		<property name="Overlay0Tint" value="90,115,125" />
 		<property name="Overlay0" value="pants_01" />
 		<property name="Layer" value="0" />
 		<property name="UISlot" value="Pants" />
@@ -4022,7 +4031,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="CustomIcon" value="denimPants" />
 	<property name="CustomIconTint" value="100,0,0" />
 	<property class="UMA">
-		<property name="Overlay0Tint" value="100,0,0" />
+		<property name="Overlay0Tint" value="130,20,20" />
 	</property>
 </item>
 
@@ -4597,7 +4606,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="bleeding,arrowCriticalBleedout,burning" />
+		<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4607,7 +4616,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="bleeding,arrowCriticalBleedout,burning" />
+		<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
 	</property>
 	<property name="Group" value="Medicine,Basics" />
 	<property name="DescriptionKey" value="bandageDesc"/>
@@ -4751,6 +4760,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="667" name="herbalAntibiotics">
+	<property name="CustomIconTint" value="b0ffb0" />
 	<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="16" />
@@ -4798,7 +4808,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="cured" />
-		<property name="Debuff" value="infection,infection1,infection2,infection3,infection4,dysentery,dysentery2" />
+		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2" />
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4810,7 +4820,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="cured" />
-		<property name="Debuff" value="infection,infection1,infection2,infection3,infection4,dysentery,dysentery2" />
+		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2" />
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
@@ -4854,6 +4864,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_stamina" value="40" />
 		<property name="Gain_wellness" value="0.4" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
+		<property name="Create_item" value="emptyJar" />
 		<property name="Debuff" value="infection" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
@@ -4943,7 +4954,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_health" value="2" />
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-2" />
-		<property name="Gain_gas" value="10" />
+		<property name="Gain_gas" value="0" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<property name="Create_item" value="canEmpty" />
 	</property>
@@ -4957,7 +4968,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_health" value="2" />
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-2" />
-		<property name="Gain_gas" value="15" />
+		<property name="Gain_gas" value="0" />
 	</property>
 </item>
 
@@ -4968,7 +4979,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_health" value="5" />
 		<property name="Gain_food" value="10" />
 		<property name="Gain_water" value="-5" />
-		<property name="Gain_gas" value="15" />
+		<property name="Gain_gas" value="0" />
 	</property>
 </item>
 
@@ -5131,7 +5142,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="15" />
 	<property name="Stacknumber" value="50" /> <!-- STK food -->
-	<property name="Weight" value="5" />
 	<property class="Action1">
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
@@ -5503,6 +5513,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Create_item" value="canEmpty" />
 		<property name="Buff" value="dysentery" />
 		<property name="Buff_chance" value="0.5" />
+		<property name="Debuff" value="burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -5524,6 +5535,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="20" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Create_item" value="canEmpty" />
+		<property name="Debuff" value="burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -5549,6 +5561,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Create_item" value="emptyJar" />
 		<property name="Buff" value="dysentery" />
 		<property name="Buff_chance" value="0.5" />
+		<property name="Debuff" value="burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -5584,6 +5597,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="20" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Create_item" value="emptyJar" />
+		<property name="Debuff" value="burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -5618,7 +5632,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Create_item" value="emptyJar" />
 		<property name="Gain_wellness" value="0.2" />
-		<property name="Debuff" value="dysentery" />
+		<property name="Debuff" value="dysentery,burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -5654,7 +5668,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Create_item" value="emptyJar" />
 		<property name="Gain_wellness" value="0.2" />
-		<property name="Debuff" value="dysentery" />
+		<property name="Debuff" value="dysentery,burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -6531,6 +6545,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="FuelValue" value="1" />
 	<property name="Weight" value="5" />
 	<property name="Group" value="Resources,Clothing" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </item>
 
 <item id="1328" name="paper">
@@ -6901,15 +6916,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="250" /> <!-- STK loot -->
 	<property name="Weight" value="10" />
 	<property name="Group" value="Resources" />
-<!--Valmod-->
-		<property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="125" />
-			<property name="Upgrade_hit_offset" value="-1" />
-			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="doorKnob" />
-		</property>
 </item>
 
 <item id="1384" name="candleStick">
@@ -7064,7 +7070,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="21" />
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
-	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock" />
 		<property name="Delay" value="0.5" />
@@ -7116,7 +7121,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Attributes">
 		<property name="DegradationMax" value="1000,6000" />
 		<property name="VehicleNoise" value="1,0.1" />
-		<property name="VehicleMaxSpeed" value="5,7" />
+		<property name="VehicleMaxSpeed" value="5,9" />
 		<property name="VehicleAcceleration" value="7,14" />
 		<property name="VehicleMetersPerLiter" value="8,12" />
 		<property name="VehicleIdleSecondsPerLiter" value="6,12" />
@@ -7167,9 +7172,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 <item id="1435" name="casinoCoin">
 	<property name="Meshfile" value="Items/Misc/casino_coinPrefab" />
 	<property name="Material" value="brass" />
-	<property name="Weight" value="5" />
+	<property name="Weight" value="1" />
 	<property name="HoldType" value="21" />
-	<property name="Stacknumber" value="10000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="5000" /> <!-- STK resource -->
 </item>
 
 <item id="1439" name="glue">
@@ -7190,14 +7195,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Weight" value="5" />
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="Group" value="Resources" />
-		<property class="Action1">
-			<property name="Class" value="Repair" />
-			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="10" />
-			<property name="Upgrade_hit_offset" value="-2" />
-			<property name="Sound_start" value="UseActions/repair_block" />
-			<property name="Allowed_upgrade_items" value="ductTape" />
-		</property>
 </item>
 
 <item id="1441" name="spring">
@@ -7322,7 +7319,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 	<!-- Valmod Starts -->
-	<item id="1599" name="Valmod Version 2.3">
+	<item id="1599" name="Valmod Version 2.4">
 		<property name="CustomIcon" value="Bounty_Hat" />
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="HoldType" value="21" />
@@ -7630,18 +7627,19 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
 		<property name="AttachmentFlashlight" value="flashlight02" />
 		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Science"/>
 		<property class="Preview">
 			<property name="Zoom" value="14" />
 			<property name="Pos" value="0.1,-0.1" />
 			<property name="Rot" value="0,-45,0" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="1,1" />
+			<property name="EntityDamage" value="3,3" />
 		</property>
 	</item>
 	<item id="1620" name="HealingDart">
 		<property name="DescriptionKey" value="HealingDartDesc"/>
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="1" />
 		<property name="Stacknumber" value="500" />
@@ -7677,7 +7675,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 	<item id="1621" name="InfectionDart">
 		<property name="DescriptionKey" value="InfectionDartDesc"/>
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="1" />
 		<property name="Stacknumber" value="500" />
@@ -7696,7 +7694,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 	<item id="1622" name="ChemicalDart">
 		<property name="DescriptionKey" value="ChemicalDartDesc"/>
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="1" />
 		<property name="Stacknumber" value="500" />
@@ -7710,7 +7708,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Group" value="Chemicals" />
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="7,9" />
+			<property name="EntityDamage" value="15,18" />
 			<property name="ApplyBuff" value="1,1" param1="AcidSplash" />
 		</property>
 	</item>
@@ -7730,7 +7728,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Delay" value="1.17" />
 		<property name="Range" value="2.5" />
 		<property name="Sphere" value="0.1" />
-		<property name="DamageEntity" value="9" />
+		<property name="DamageEntity" value="12" />
 		<property name="DamageBlock" value="4" />
 		<property name="Sound_start" value="Weapons/Melee/Torch/torch_swoosh" />
 		<property name="Stamina_usage" value="6" />
@@ -7759,7 +7757,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Magazine_size" value="3" />
 		</property>
 	</item>
-
 	<!-- Expanded Ammunition Types -->
 	<item id="1635" name="9mmBulletHP">
 		<property name="Extends" value="9mmBullet" />
@@ -7884,6 +7881,22 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="HollowTipDesc"/>
 <!-- Test to see if this is still needed <property name="Weight" value="5" /> -->
 	</item>
+	<item id="1652" name="lokiShell">
+	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+	<property name="Material" value="lead" />
+	<property name="HoldType" value="21" />
+	<property name="Stacknumber" value="250" /> <!-- STK ammo -->
+	<property name="DropScale" value="4" />
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="DescriptionKey" value="lokiShellDesc"/>
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="3.6,9" />
+			<property name="BlockDamage" value="14,17" />
+			<property name="ApplyBuff" value="1,1" param1="AcidSplash" />
+		</property>
+		<property name="CraftingSkillGroup" value="Science"/>
+	</item>
 
 	<!-- Admin Tools -->
 	<item id="1660" name="AdminNail">
@@ -7928,8 +7941,10 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		</property>
 	</item>
 	<item id="1662" name="Admin Tool">
+	<property name="Degradation" value="500" param1="false" />
+	<property name="DegradationBreaksAfter" value="false" />
 	<property name="Stacknumber" value="1" />
-	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axe" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
 	<property name="Material" value="stone" />
 	<property name="RepairTools" value="rockSmall" />
 	<property name="HoldType" value="32" />
@@ -7952,6 +7967,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Repair_amount" value="5000" />
 		<property name="Upgrade_hit_offset" value="-10" />
 	</property>
+		<property class="Attributes">
+			<property name="DegradationRate" value="0,0" />
+		</property>
 	</item>
 	<item id="1663" name="Admin Pill">
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
@@ -7971,7 +7989,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		</property>
 	</item>
 	<item id="1664" name="Admin Shiv">
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
@@ -8137,6 +8155,46 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CustomIconTint" value="575757" />
 		<property class="UMA">
 			<property name="Overlay0Tint" value="0, 0, 0" />
+		</property>
+	</item>
+	<item id="1701" name="footballHelmetRed">
+		<property name="Extends" value="footballHelmet" />
+		<property name="CustomIcon" value="footballHelmet" />
+		<property name="CustomIconTint" value="E01616" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="1702" name="footballHelmetGreen">
+		<property name="Extends" value="footballHelmet" />
+		<property name="CustomIcon" value="footballHelmet" />
+		<property name="CustomIconTint" value="00CC0E" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="1703" name="footballHelmetBlack">
+		<property name="Extends" value="footballHelmet" />
+		<property name="CustomIcon" value="footballHelmet" />
+		<property name="CustomIconTint" value="404040" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 0, 0" />
+		</property>
+	</item>
+	<item id="1704" name="footballHelmetBlue">
+		<property name="CustomIcon" value="footballHelmet" />
+		<property name="CustomIconTint" value="2530A8" />
+		<property name="Extends" value="footballHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="1705" name="footballHelmetLime">
+		<property name="Extends" value="footballHelmet" />
+		<property name="CustomIcon" value="footballHelmet" />
+		<property name="CustomIconTint" value="102, 102, 0" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="102, 102, 0" />
 		</property>
 	</item>
 	<item id="1706" name="bandanaCamo">
@@ -9078,7 +9136,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 <item id="1810" name="grillSteak">
 		<property name="Extends" value="grilledMeat" />
 	<property class="Action1">
-		<property name="Gain_food" value="20" />
+		<property name="Gain_food" value="23" />
 	</property>
 	<property name="Smell" value="exLargeSmell" />
 </item>
@@ -9529,7 +9587,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<!-- Misc Mod -->
 	<item id="1950" name="weedCleaver">
 		<property name="DescriptionKey" value="weedCleaverDesc"/>
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/machete" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
 		<property name="Material" value="metal" />
 		<property name="Degradation" value="500" param1="false" />
 		<property name="HoldType" value="47" />
@@ -9574,6 +9632,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		</property>
 	</item>
 	<item id="1952" name="animalFeed">
+		<property name="Degradation" value="125" param1="true" />
 		<property name="DescriptionKey" value="animalFeedDesc"/>
 		<property name="Meshfile" value="Items/Food/seed_blueberry" />
 		<property name="Material" value="organic" />
@@ -9655,7 +9714,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 	<item id="1957" name="Syringe">
 		<property name="DescriptionKey" value="SyringeDesc"/>
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="1" />
 		<property name="Group" value="Resources" />
@@ -9794,7 +9853,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="50" />
-		<property name="FuelValue" value="540" />
+		<property name="FuelValue" value="1080" />
 		<property name="Group" value="Chemicals" />
 		<property name="CraftingSkillGroup" value="Science"/>
 		<property class="Preview">
@@ -9804,6 +9863,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		</property>
 	</item>
 	<item id="1966" name="classKey">
+		<property name="Degradation" value="125" param1="true" />
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="DescriptionKey" value="classKeyDesc"/>
 		<property name="Material" value="paper" />
@@ -9836,8 +9896,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		</property>
 	</item>
 	<item id="1968" name="Lockpick">
+		<property name="Degradation" value="125" param1="true" />
 		<property name="DescriptionKey" value="LockpickDesc"/>
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="1" />
 		<property name="Group" value="Resources" />
@@ -9849,6 +9910,76 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Upgrade_hit_offset" value="-1" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="Lockpick" />
+		</property>
+	</item>
+<item id="1969" name="butcherKnife">
+	<property name="Extends" value="huntingKnife" />
+	<property name="DescriptionKey" value="butcherKnifeDesc"/>
+	<property class="Action0">
+		<property name="ToolCategory.Butcher" value="2" />
+	</property>
+</item>
+<item id="1970" name="skinningKnife">
+	<property name="Extends" value="huntingKnife" />
+	<property name="DescriptionKey" value="skinningKnifeDesc"/>
+	<property class="Action0">
+		<property name="ToolCategory.Butcher" value="1" />
+		<property name="ToolCategory.Skinner" value="1" />
+	</property>
+</item>
+<item id="1971" name="seedPack">
+		<property name="DescriptionKey" value="seedPackDesc"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="100" />
+		<property class="Preview">
+			<property name="Zoom" value="28" />
+			<property name="Pos" value="0,-0.05" />
+			<property name="Rot" value="90,45,0" />
+		</property>
+	</item>
+<item id="1972" name="lokiStew">
+	<property name="Extends" value="meatStew" />
+	<property name="DescriptionKey" value="lokiStewDesc"/>
+	<property class="Action1">
+		<property name="Gain_food" value="40" />
+	</property>
+</item>
+<item id="1973" name="lokiWater">
+	<property name="Extends" value="bottledWater" />
+	<property name="DescriptionKey" value="lokiWaterDesc"/>
+		<property class="Action0">
+			<property name="Change_item_to" value="coldlokiWater" />
+		</property>
+	<property class="Action1">
+		<property name="Gain_water" value="40" />
+	</property>
+</item>
+<item id="1974" name="coldlokiWater">
+	<property name="CustomIcon" value="bottledWater" />
+	<property name="Extends" value="bottledWater" />
+	<property class="Action1">
+		<property name="Gain_water" value="40" />
+		<property name="Buff" value="yuccaJuiceCooling" />
+	</property>
+</item>
+<item id="1975" name="moleSandwich">
+	<property name="Extends" value="shamSandwich" />
+	<property name="DescriptionKey" value="moleSandwichDesc"/>
+	<property class="Action1">
+		<property name="Gain_health" value="-3" />
+		<property name="Gain_food" value="20" />
+		<property name="Buff_chance" value="1" />
+		<property name="Gain_wellness" value="-0.5" />
+	</property>
+</item>
+	<item id="1976" name="lokiBow">
+		<property name="Extends" value="woodenBow" />
+		<property name="DescriptionKey" value="lokiBowDesc"/>
+		<property class="Attributes">
+			<property name="DegradationMax" value="200,600" />
 		</property>
 	</item>
 
@@ -9915,7 +10046,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="recipebookChemistryDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="oil,fuelLog,chemicalAgent" />
+			<property name="Recipes_to_learn" value="oil,fuelLog,chemicalAgent,lokiShell" />
 			<property name="Skills_to_gain" value="Science" />
 		</property>
 	</item>
@@ -9943,12 +10074,19 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Skills_to_gain" value="Miscellaneous Crafting" />
 		</property>
 	</item>
-	<item id="2011" name="auctionTicket">
-		<property name="DescriptionKey" value="auctionTicketDesc"/>
+	<item id="2025" name="recipebookLoki">
+		<property name="DescriptionKey" value="recipebookLokiDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="pennyPost" />
-			<property name="Skills_to_gain" value="Miscellaneous Crafting" />
+			<property name="Recipes_to_learn" value="lokiStew,lokiWater,lokiBow,lokiShell" />
+			<property name="Skills_to_gain" value="Athletics,Scavenging" />
+		</property>
+	</item>
+	<item id="2026" name="skillbookAthletics">
+		<property name="DescriptionKey" value="skillbookAthleticsDesc"/>
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="Athletics" />
 		</property>
 	</item>
 
@@ -9972,6 +10110,293 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Weight" value="5" />
 		<property name="Stacknumber" value="500" />
 		<property name="Group" value="Resources" />
+	</item>
+	<!--Leather Red -->
+	<item id="2102" name="leatherHoodRed">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2103" name="leatherJacketRed">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2104" name="leatherPantsRed">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2105" name="leatherBootsRed">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2106" name="leatherGlovesRed">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<!--Leather Blue -->
+	<item id="2107" name="leatherHoodBlue">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2108" name="leatherJacketBlue">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2109" name="leatherPantsBlue">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2110" name="leatherBootsBlue">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2111" name="leatherGlovesBlue">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<!--Leather Green -->
+	<item id="2112" name="leatherHoodGreen">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2113" name="leatherJacketGreen">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2114" name="leatherPantsGreen">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2115" name="leatherBootsGreen">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2116" name="leatherGlovesGreen">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<!--Leather Purple -->
+	<item id="1745" name="leatherHoodPurple">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2117" name="leatherJacketPurple">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2118" name="leatherPantsPurple">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2119" name="leatherBootsPurple">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2120" name="leatherGlovesPurple">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<!--Leather Yellow -->
+	<item id="2121" name="leatherHoodYellow">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2122" name="leatherJacketYellow">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2123" name="leatherPantsYellow">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2124" name="leatherBootsYellow">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2125" name="leatherGlovesYellow">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<!--Leather Orange -->
+	<item id="2126" name="leatherHoodOrange">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2127" name="leatherJacketOrange">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2128" name="leatherPantsOrange">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2129" name="leatherBootsOrange">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2130" name="leatherGlovesOrange">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<!--Leather Black -->
+	<item id="2131" name="leatherHoodBlack">
+		<property name="CustomIcon" value="leatherHood" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="leatherHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2132" name="leatherJacketBlack">
+		<property name="CustomIcon" value="leatherJacket" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="leatherJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2133" name="leatherPantsBlack">
+		<property name="CustomIcon" value="leatherPants" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="leatherPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2134" name="leatherBootsBlack">
+		<property name="CustomIcon" value="leatherBoots" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="leatherBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2135" name="leatherGlovesBlack">
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="leatherGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
 	</item>
 	<!--Iron Red -->
 	<item id="2136" name="ironHelmetRed">
@@ -10137,6 +10562,47 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Overlay0Tint" value="51, 0, 102" />
 		</property>
 	</item>
+	<!--Iron Lime -->
+	<item id="2156" name="ironHelmetLime">
+		<property name="CustomIcon" value="ironHelmet" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="ironHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2157" name="ironChestArmorLime">
+		<property name="CustomIcon" value="ironChestArmor" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="ironChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2158" name="ironLegArmorLime">
+		<property name="CustomIcon" value="ironLegArmor" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="ironLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2159" name="ironBootsLime">
+		<property name="CustomIcon" value="ironBoots" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="ironBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2160" name="ironGlovesLime">
+		<property name="CustomIcon" value="ironGloves" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="ironGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
 	<!--Iron Orange -->
 	<item id="2161" name="ironHelmetOrange">
 		<property name="CustomIcon" value="ironHelmet" />
@@ -10219,6 +10685,867 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Overlay0Tint" value="51, 51, 51" />
 		</property>
 	</item>
+	<!--Scrap Red -->
+	<item id="2171" name="scrapHelmetRed">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2172" name="scrapChestArmorRed">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2173" name="scrapLegArmorRed">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2174" name="scrapBootsRed">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2175" name="scrapGlovesRed">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<!--Scrap Blue -->
+	<item id="2176" name="scrapHelmetBlue">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2177" name="scrapChestArmorBlue">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2178" name="scrapLegArmorBlue">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2179" name="scrapBootsBlue">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2180" name="scrapGlovesBlue">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<!--Scrap Green -->
+	<item id="2181" name="scrapHelmetGreen">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2182" name="scrapChestArmorGreen">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2183" name="scrapLegArmorGreen">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2184" name="scrapBootsGreen">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2185" name="scrapGlovesGreen">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<!--Scrap Purple -->
+	<item id="2186" name="scrapHelmetPurple">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2187" name="scrapChestArmorPurple">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2188" name="scrapLegArmorPurple">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2189" name="scrapBootsPurple">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2190" name="scrapGlovesPurple">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<!--Scrap Lime -->
+	<item id="2191" name="scrapHelmetLime">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2192" name="scrapChestArmorLime">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2193" name="scrapLegArmorLime">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2194" name="scrapBootsLime">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2195" name="scrapGlovesLime">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<!--Scrap Orange -->
+	<item id="2196" name="scrapHelmetOrange">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2197" name="scrapChestArmorOrange">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2198" name="scrapLegArmorOrange">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2199" name="scrapBootsOrange">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2200" name="scrapGlovesOrange">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<!--Scrap Black -->
+	<item id="2201" name="scrapHelmetBlack">
+		<property name="CustomIcon" value="scrapHelmet" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="scrapHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2202" name="scrapChestArmorBlack">
+		<property name="CustomIcon" value="scrapChestArmor" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="scrapChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2203" name="scrapLegArmorBlack">
+		<property name="CustomIcon" value="scrapLegArmor" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="scrapLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2204" name="scrapBootsBlack">
+		<property name="CustomIcon" value="scrapBoots" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="scrapBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2205" name="scrapGlovesBlack">
+		<property name="CustomIcon" value="scrapGloves" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="scrapGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<!--Cloth Red -->
+	<item id="2206" name="clothHatRed">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2207" name="clothJacketRed">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2208" name="clothPantsRed">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2209" name="clothBootsRed">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2210" name="clothGlovesRed">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<!--Cloth Blue -->
+	<item id="2211" name="clothHatBlue">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2212" name="clothJacketBlue">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2213" name="clothPantsBlue">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2214" name="clothBootsBlue">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2215" name="clothGlovesBlue">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<!--Cloth Green -->
+	<item id="2216" name="clothHatGreen">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2217" name="clothJacketGreen">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2218" name="clothPantsGreen">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2219" name="clothBootsGreen">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2220" name="clothGlovesGreen">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<!--Cloth Purple -->
+	<item id="2221" name="clothHatPurple">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2222" name="clothJacketPurple">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2223" name="clothPantsPurple">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2224" name="clothBootsPurple">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2225" name="clothGlovesPurple">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<!--Cloth Lime -->
+	<item id="2226" name="clothHatLime">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2227" name="clothJacketLime">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2228" name="clothPantsLime">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2229" name="clothBootsLime">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2230" name="clothGlovesLime">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<!--Cloth Orange -->
+	<item id="2231" name="clothHatOrange">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2232" name="clothJacketOrange">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2233" name="clothPantsOrange">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2234" name="clothBootsOrange">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2235" name="clothGlovesOrange">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<!--Cloth Black -->
+	<item id="2236" name="clothHatBlack">
+		<property name="CustomIcon" value="clothHat" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="clothHat" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2237" name="clothJacketBlack">
+		<property name="CustomIcon" value="clothJacket" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="clothJacket" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2238" name="clothPantsBlack">
+		<property name="CustomIcon" value="clothPants" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="clothPants" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2239" name="clothBootsBlack">
+		<property name="CustomIcon" value="clothBoots" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="clothBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2240" name="clothGlovesBlack">
+		<property name="CustomIcon" value="clothGloves" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="clothGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<!--Hide Red -->
+	<item id="2241" name="animalHideHoodRed">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2242" name="animalHideChestArmorRed">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2243" name="animalHideLegArmorRed">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2244" name="animalHideBootsRed">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2245" name="animalHideGlovesRed">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<!--Hide Blue -->
+	<item id="2246" name="animalHideHoodBlue">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2247" name="animalHideChestArmorBlue">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2248" name="animalHideLegArmorBlue">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2249" name="animalHideBootsBlue">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2250" name="animalHideGlovesBlue">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<!--Hide Green -->
+	<item id="2251" name="animalHideHoodGreen">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2252" name="animalHideChestArmorGreen">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2253" name="animalHideLegArmorGreen">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2254" name="animalHideBootsGreen">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2255" name="animalHideGlovesGreen">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<!--Hide Purple -->
+	<item id="2256" name="animalHideHoodPurple">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2257" name="animalHideChestArmorPurple">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2258" name="animalHideLegArmorPurple">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2259" name="animalHideBootsPurple">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2260" name="animalHideGlovesPurple">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<!--Hide Lime-->
+	<item id="2261" name="animalHideHoodLime">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2262" name="animalHideChestArmorLime">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2263" name="animalHideLegArmorLime">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2264" name="animalHideBootsLime">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2265" name="animalHideGlovesLime">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<!--Hide Orange -->
+	<item id="2266" name="animalHideHoodOrange">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2267" name="animalHideChestArmorOrange">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2268" name="animalHideLegArmorOrange">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2269" name="animalHideBootsOrange">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2270" name="animalHideGlovesOrange">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<!--Hide Black -->
+	<item id="2271" name="animalHideHoodBlack">
+		<property name="CustomIcon" value="animalHideHood" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="animalHideHood" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2272" name="animalHideChestArmorBlack">
+		<property name="CustomIcon" value="animalHideChestArmor" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="animalHideChestArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2273" name="animalHideLegArmorBlack">
+		<property name="CustomIcon" value="animalHideLegArmor" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="animalHideLegArmor" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2274" name="animalHideBootsBlack">
+		<property name="CustomIcon" value="animalHideBoots" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="animalHideBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2275" name="animalHideGlovesBlack">
+		<property name="CustomIcon" value="animalHideGloves" />
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="animalHideGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
 	<!--Leather Duster Red -->
 	<item id="2276" name="leatherDusterRed">
 		<property name="CustomIcon" value="leatherDuster" />
@@ -10255,6 +11582,15 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Overlay0Tint" value="51, 0, 102" />
 		</property>
 	</item>
+	<!--Leather Duster Lime-->
+	<item id="2280" name="leatherDusterLime">
+		<property name="CustomIcon" value="leatherDuster" />
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="leatherDuster" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
 	<!--Leather Duster Orange -->
 	<item id="2281" name="leatherDusterOrange">
 		<property name="CustomIcon" value="leatherDuster" />
@@ -10273,7 +11609,260 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Overlay0Tint" value="51, 51, 51" />
 		</property>
 	</item>
-		
+	<!--Steel Red -->
+	<item id="2283" name="steelHelmetRed">
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2284" name="steelChestplateRed">
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2285" name="steelLegsRed">
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2286" name="steelBootsRed">
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<item id="2287" name="steelGlovesRed">
+		<property name="CustomIconTint" value="FF0004" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="204, 0, 0" />
+		</property>
+	</item>
+	<!--Steel Blue -->
+	<item id="2288" name="steelHelmetBlue">
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2289" name="steelChestplateBlue">
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2290" name="steelLegsBlue">
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2291" name="steelBootsBlue">
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<item id="2292" name="steelGlovesBlue">
+		<property name="CustomIconTint" value="0033FF" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="0, 51, 204" />
+		</property>
+	</item>
+	<!--Steel Green -->
+	<item id="2293" name="steelHelmetGreen">
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2294" name="steelChestplateGreen">
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2295" name="steelLegsGreen">
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2296" name="steelBootsGreen">
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<item id="2297" name="steelGlovesGreen">
+		<property name="CustomIconTint" value="335C41" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 102, 0" />
+		</property>
+	</item>
+	<!--Steel Purple -->
+	<item id="2298" name="steelHelmetPurple">
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2299" name="steelChestplatePurple">
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2300" name="steelLegsPurple">
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2301" name="steelBootsPurple">
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<item id="2302" name="steelGlovesPurple">
+		<property name="CustomIconTint" value="C483FF" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 0, 102" />
+		</property>
+	</item>
+	<!--Steel Lime-->
+	<item id="2303" name="steelHelmetLime">
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2304" name="steelChestplateLime">
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2305" name="steelLegsLime">
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2306" name="steelBootsLime">
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<item id="2307" name="steelGlovesLime">
+		<property name="CustomIconTint" value="EEFF38" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 255, 0" />
+		</property>
+	</item>
+	<!--Steel Orange -->
+	<item id="2308" name="steelHelmetOrange">
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2309" name="steelChestplateOrange">
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2310" name="steelLegsOrange">
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2311" name="steelBootsOrange">
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<item id="2312" name="steelGlovesOrange">
+		<property name="CustomIconTint" value="FF9500" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="255, 102, 0" />
+		</property>
+	</item>
+	<!--Steel Black -->
+	<item id="2313" name="steelHelmetBlack">
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="steelHelmet" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2314" name="steelChestplateBlack">
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="steelChestplate" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2315" name="steelLegsBlack">
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="steelLegs" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2316" name="steelBootsBlack">
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="steelBoots" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+	<item id="2317" name="steelGlovesBlack">
+		<property name="CustomIconTint" value="222526" />
+		<property name="Extends" value="steelGloves" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="51, 51, 51" />
+		</property>
+	</item>
+
+	
 	<!-- Workstation Tools -->
 	<item id="2500" name="sewingKit">
 		<property name="DescriptionKey" value="sewingKitDesc"/>
@@ -10333,7 +11922,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DescriptionKey" value="SkillGainDesc"/>
 		<property name="CustomIcon" value="boneShiv" />
 		<property name="CustomIconTint" value="FF0000" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShiv" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="36" />
 		<property name="SoundDestroy" value="wooddestroy1" />
@@ -10437,6 +12026,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Group" value="Survival" />
 	</item>
 	<item id="2591" name="survivorCombination">
+		<property name="Degradation" value="125" param1="true" />
 		<property name="DescriptionKey" value="survivorCombinationDesc"/>
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="Material" value="Survivor Notes" />
@@ -10542,6 +12132,12 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="challengeQuestMaster" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_dogeatdog" />
+	</property>
+</item>
+<item id="2625" name="challengeFeedTheMole">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_feedthemole" />
 	</property>
 </item>
 
@@ -10739,6 +12335,104 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="expGainDesc"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="Rifles" />
+	</property>
+</item>
+<item id="2917" name="expAthletics">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="expGainDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Athletics" />
+	</property>
+</item>
+<item id="2918" name="expScavenging">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="expGainDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Scavenging" />
+	</property>
+</item>
+<item id="2919" name="expMiscCrafting">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="expGainDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Miscellaneous Crafting" />
+	</property>
+</item>
+<!-- Classes -->
+
+<item id="3000" name="perkSurvivor">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Weapon Smithing,Weapon Smithing,Weapon Smithing,Weapon Smithing,Weapon Smithing,Archery,Archery,Archery,Athletics,Scavenging,Scavenging,Scavenging,Scavenging,Scavenging,The Survivor,Treasure Hunter" />
+	</property>
+</item>
+<item id="3001" name="perkMiner">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Tool Smithing,Tool Smithing,Tool Smithing,Tool Smithing,Tool Smithing,Miner 69er" />
+	</property>
+</item>
+<item id="3002" name="perkHunter">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Scavenging,Leatherworking,Leatherworking,Leatherworking,Leatherworking,Leatherworking,Leather Tanning,Treasure Hunter" />
+	</property>
+</item>
+<item id="3003" name="perkGunman">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Pistols,Pistols,Pistols,Pistols,Pistols,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing" />
+	</property>
+</item>
+<item id="3004" name="perkMedic">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Medicine,Medicine,Medicine,Medicine,Medicine,Medicine,Medicine,Medicine,Medicine,Medicine,Science,Science,Science,Science,Science,Science,Science,Science,Science,Science" />
+	</property>
+</item>
+<item id="3005" name="perkBruiser">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Weapon Smithing,Weapon Smithing,Weapon Smithing,Athletics,Athletics,Athletics,Athletics,Athletics,Athletics,Athletics,Athletics,Athletics,Athletics,Blunt Weapons,Blunt Weapons,Blunt Weapons,Blunt Weapons,Blunt Weapons,Pummel Pete,Blade Weapons,Blade Weapons,Blade Weapons,Blade Weapons,Blade Weapons,Knife Guy,Shotguns,Shotguns,Shotguns,Shotguns,Shotguns,Boom Stick" />
+	</property>
+</item>
+<item id="3006" name="perkRifleman">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Rifles,Rifles,Rifles,Rifles,Rifles,Better Lead Than Dead,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing" />
+	</property>
+</item>
+<item id="3007" name="perkVeteran">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Rifles,Rifles,Rifles,Rifles,Rifles,Rifles,Rifles,Rifles,Rifles,Rifles,Better Lead Than Dead,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing,Gun Smithing" />
+	</property>
+</item>
+<item id="3008" name="perkBuilder">
+	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Miscellaneous Crafting,Quicker Crafting,The Fixer,Construction Tools,Construction Tools,Construction Tools,Construction Tools,Construction Tools,Construction Tools,Construction Tools,Construction Tools,Construction Tools,Construction Tools" />
 	</property>
 </item>
 

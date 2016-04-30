@@ -264,6 +264,7 @@ Description of Options:
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="3" blockname="bedrock" />
 		</layers>
@@ -356,6 +357,7 @@ Description of Options:
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="3" blockname="bedrock" />
 		</layers>
@@ -641,10 +643,12 @@ Description of Options:
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -758,6 +762,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -765,6 +770,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -865,6 +871,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -872,6 +879,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -926,6 +934,7 @@ Description of Options:
 				<resource blockname="coalOre" cluster="1" prob="0.01" />
 				<resource blockname="potassiumNitrate" cluster="2" prob="0.01" />
 				<resource blockname="leadOre" cluster="2" prob="0.01" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" />
@@ -961,6 +970,7 @@ Description of Options:
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -969,6 +979,7 @@ Description of Options:
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="potassiumNitrate" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="gravel" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -1029,6 +1040,7 @@ Description of Options:
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="coalOre" cluster="2" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
@@ -1037,6 +1049,7 @@ Description of Options:
 			<layer depth="20" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
 				<resource blockname="leadOre" cluster="1" prob="0.1" rwgGenerationType="all" />
+				<resource blockname="oilDeposit" cluster="2" prob="0.1" rwgGenerationType="all" />
 			</layer>
 			<layer depth="*" blockname="stone" >
 				<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />
