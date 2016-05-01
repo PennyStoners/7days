@@ -12350,7 +12350,30 @@ kind of free
 	<property name="Extends" value="metalSignLetter_a" />  
 	<property name="Model" value="font_z" />
 </block>
-
+<block id="1830" name="pennyPost">
+		<property name="MaxDamage" value="50" />
+		<property name="StabilitySupport" value="false" />
+		<property name="DescriptionKey" value="pennyPostDesc"/>
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="Ext3dModel" />
+		<property name="Mesh" value="models" />
+		<property name="FuelValue" value="100" />
+		<property name="Model" value="Furniture/desk01" param1="main_mesh" />
+		<drop event="Destroy" name="woodDebris" count="2" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="MultiBlockDim" value="2,1,1" />
+		<property name="Class" value="Workstation" />
+		<property class="Workstation">
+			<property name="Modules" value="output,input"/>
+		</property>
+		<property name="Group" value="Basics" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+	</block>
+	
+	
+	
 	<!-- do not use 1800-1900, reserved for font blocks -->
 	
 <block id="1901" name="conduit01Corner">

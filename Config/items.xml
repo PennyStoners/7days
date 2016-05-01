@@ -7121,7 +7121,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Attributes">
 		<property name="DegradationMax" value="1000,6000" />
 		<property name="VehicleNoise" value="1,0.1" />
-		<property name="VehicleMaxSpeed" value="5,9" />
+		<property name="VehicleMaxSpeed" value="5,18" />
 		<property name="VehicleAcceleration" value="7,14" />
 		<property name="VehicleMetersPerLiter" value="8,12" />
 		<property name="VehicleIdleSecondsPerLiter" value="6,12" />
@@ -10087,6 +10087,14 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Skills_to_gain" value="Athletics" />
+		</property>
+	</item>
+	<item id="2011" name="auctionTicket">
+		<property name="DescriptionKey" value="auctionTicketDesc"/>
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="pennyPost" />
+			<property name="Skills_to_gain" value="Miscellaneous Crafting" />
 		</property>
 	</item>
 

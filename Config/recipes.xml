@@ -81,7 +81,11 @@ tooltip?
 
 <!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
 
-
+<recipe name="10mmBullet" count="1" scrapable="True">
+	<ingredient name="bulletCasing" count="1"/>
+	<ingredient name="gunPowder" count="2"/>
+	<ingredient name="bulletTip" count="1"/>
+</recipe>
 
 <recipe name="44MagBullet" count="1" scrapable="False">
 	<ingredient name="bulletCasing" count="1"/>
@@ -2710,13 +2714,21 @@ tooltip?
 		<ingredient name="unit_lead" count="1"/> 
 		<ingredient name="unit_clay" count="1"/>
     </recipe>
-
+    <recipe name="10mmBulletHP" count="1" scrapable="True">
+		<ingredient name="HollowTip" count="1" />
+        <ingredient name="gunPowder" count="2"/>
+        <ingredient name="bulletCasing" count="1"/>
+    </recipe>
     <recipe name="10mmBulletINC" count="1" scrapable="True">
 		<ingredient name="HollowTip" count="1" />
         <ingredient name="gunPowder" count="2"/>
         <ingredient name="bulletCasing" count="1"/>
     </recipe>
-
+    <recipe name="44MagBulletHP" count="1" scrapable="True">
+		<ingredient name="HollowTip" count="1" />
+        <ingredient name="gunPowder" count="3"/>
+        <ingredient name="bulletCasing" count="1"/>
+    </recipe>
     <recipe name="44MagBulletINC" count="1" scrapable="True">
 		<ingredient name="HollowTip" count="1" />
         <ingredient name="gunPowder" count="3"/>
@@ -2944,6 +2956,9 @@ tooltip?
   </recipe>
  	<recipe name="recipebookLockpick" count="1" craft_area="studyDesk" scrapable="False">
     <ingredient name="survivorNotes" count="10" />
+  </recipe>
+  <recipe name="auctionTicket" count="1" craft_area="studyDesk" scrapable="False">
+    <ingredient name="survivorNotes" count="20" />
   </recipe>
 <!-- EXP Gain -->
 <recipe name="expWeaponSmithing" count="1" craft_area="studyDesk" scrapable="False">
@@ -4241,6 +4256,126 @@ tooltip?
 	<ingredient name="forgedIron" count="25"/>
 </recipe>
 
+<!-- Penny Post -->
+<recipe name="pennyPost" count="1" scrapable="False">
+	<ingredient name="wood" count="10"/>
+	<ingredient name="casinoCoin" count="50"/>
+	<ingredient name="forgedSteel" count="10"/>
+</recipe>
+<recipe name="partsPistol_grip" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPistol_receiver" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPistol_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPistol_barrel" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="parts44Magnum_grip" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="parts44Magnum_cylinder" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="parts44Magnum_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="parts44Magnum_frame" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPumpShotgun_stockShort" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPumpShotgun_receiver" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPumpShotgun_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPumpShotgun_barrelShort" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPumpShotgun_stock" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsPumpShotgun_barrel" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsAK47_stock" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsAK47_receiver" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsAK47_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsAK47_barrel" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsHuntingRifle_stock" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsHuntingRifle_receiver" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsHuntingRifle_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsHuntingRifle_barrel" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsSniperRifle_stock" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsSniperRifle_receiver" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsSniperRifle_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsSniperRifle_barrel" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsRocketLauncher_stock" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsRocketLauncher_receiver" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsRocketLauncher_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsRocketLauncher_barrel" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsBoltRifle_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="gunSilencer" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="gunChoke" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="gunScope" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsChainsaw_blade" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsChainsaw_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsAuger_blade" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+<recipe name="partsAuger_parts" count="1" scrapable="False" craft_area="pennyPost">
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
 
 <!-- AutoWalls -->
 <recipe name="AutoWall_Wood" count="1" scrapable="False" >
